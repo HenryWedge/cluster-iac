@@ -15,8 +15,12 @@ spec:
         metrics:
           port: 9249
         operatorConfiguration:
-          flink-conf.yaml: |
+          create: true
+          append: true
+          flink-conf.yaml: |+
             kubernetes.operator.reconcile.interval: 15s
+            metrics.reporter.prom.class: org.apache.flink.metrics.prometheus.PrometheusReporter
+            metrics.reporter.prom.port: 9249
   destination:
     server: https://kubernetes.default.svc
     namespace: flink-operator
