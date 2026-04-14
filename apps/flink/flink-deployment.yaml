@@ -18,4 +18,4 @@ spec:
       memory: "2048m"
       cpu: 1
     replicas: 2
-  mode: session
+  mode: native
