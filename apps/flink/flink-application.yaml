@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://downloads.apache.org/flink/flink-kubernetes-operator-helm-chart/
+    repoURL: https://downloads.apache.org/flink/
     chart: flink-kubernetes-operator
-    targetRevision: 2.2.0
+    targetRevision: 1.14.0
     helm:
       values: |
         watchNamespaces: ["flink"]
