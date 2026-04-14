@@ -8,6 +8,7 @@ spec:
   flinkVersion: v1_18
   serviceAccount: flink
   flinkConfiguration:
+    metrics.reporter.prom.factory.class: org.apache.flink.metrics.prometheus.PrometheusReporterFactory
     taskmanager.numberOfTaskSlots: "2"
   jobManager:
     resource:
