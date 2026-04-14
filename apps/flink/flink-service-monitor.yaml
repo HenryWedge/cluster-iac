@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: flink-session
+      app: flink
   namespaceSelector:
     matchNames:
       - flink
