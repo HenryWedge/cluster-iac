@@ -12,6 +12,8 @@ spec:
     helm:
       values: |
         watchNamespaces: ["flink"]
+        metrics:
+          port: 9249
         operatorConfiguration:
           flink-conf.yaml: |
             kubernetes.operator.reconcile.interval: 15s
