@@ -2,7 +2,7 @@ apiVersion: flink.apache.org/v1beta1
 kind: FlinkDeployment
 metadata:
   name: flink-session
-  namespace: argocd
+  namespace: flink
 spec:
   image: flink:1.18
   flinkVersion: v1_18
