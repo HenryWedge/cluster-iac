@@ -8,8 +8,8 @@ spec:
   flinkVersion: v1_18
   serviceAccount: flink
   flinkConfiguration:
-    metrics.reporter.prom.factory.class: org.apache.flink.metrics.prometheus.PrometheusReporterFactory
-    taskmanager.numberOfTaskSlots: "2"
+    metrics.reporter.prom.class: org.apache.flink.metrics.prometheus.PrometheusReporter
+    metrics.reporter.prom.port: "9249"
   jobManager:
     resource:
       memory: "1024m"
