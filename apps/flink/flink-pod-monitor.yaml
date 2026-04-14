@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: flink-kubernetes-operator
+  namespace: monitoring
+  labels:
+    release: prometheus
+spec:
+  namespaceSelector:
+    matchNames:
+      - flink
+  selector:
+    matchLabels:
+      app: flink-session
+  podMetricsEndpoints:
+      - port: metrics
