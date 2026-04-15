@@ -4,7 +4,7 @@ metadata:
   name: flink-session
   namespace: flink
 spec:
-  image: flink:1.18
+  image: hendrikreiter/pyflink:2.2.0-3.10
   flinkVersion: v1_18
   serviceAccount: flink
   flinkConfiguration:
