@@ -5,6 +5,7 @@ metadata:
   namespace: flink
 spec:
   image: hendrikreiter/pyflink:2.2.0-3.10
+  imagePullPolicy: Always
   flinkVersion: v2_2
   serviceAccount: flink
   flinkConfiguration:
