@@ -5,7 +5,7 @@ metadata:
   namespace: flink
 spec:
   image: hendrikreiter/pyflink:2.2.0-3.10
-  flinkVersion: v1_18
+  flinkVersion: v2_2
   serviceAccount: flink
   flinkConfiguration:
     metrics.reporter.prom.factory.class: org.apache.flink.metrics.prometheus.PrometheusReporterFactory
