@@ -8,6 +8,7 @@ spec:
   source:
     repoURL: https://pulsar.apache.org/charts
     chart: pulsar
+    targetRevision: 4.5.0
     helm:
       values: ""
   destination:
