@@ -10,7 +10,7 @@ spec:
     chart: strimzi-kafka-operator
     targetRevision: 0.51.0
     helm:
-      values: {}
+      values: ""
   destination:
     server: https://kubernetes.default.svc
     namespace: storage
