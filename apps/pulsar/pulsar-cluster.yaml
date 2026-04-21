@@ -10,7 +10,10 @@ spec:
     chart: pulsar
     targetRevision: 4.5.0
     helm:
-      values: ""
+      values: |
+        victoria-metrics-k8s-stack:
+          kube-state-metrics:
+            enabled: false
   destination:
     server: https://kubernetes.default.svc
     namespace: storage
