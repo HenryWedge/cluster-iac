@@ -13,7 +13,7 @@ spec:
       values: ""
   destination:
     server: https://kubernetes.default.svc
-    namespace: storage
+    namespace: kafka
   syncPolicy:
     automated:
       prune: true
