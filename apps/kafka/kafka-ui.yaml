@@ -11,6 +11,8 @@ spec:
     targetRevision: 1.6.4
     helm:
       values: |
+        service:
+          type: NodePort
         yamlApplicationConfig:
           kafka:
             clusters:
@@ -18,8 +20,6 @@ spec:
                 bootstrapServers:  kafka-cluster-kafka-bootstrap.kafka.svc:9092
           auth:
             type: disabled
-          service:
-            type: NodePort
           management:
             health:
               ldap:
