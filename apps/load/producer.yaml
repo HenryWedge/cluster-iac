@@ -1,9 +1,10 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Job
 metadata:
   name: image-producer
 spec:
   replicas: 1
+  activeDeadlineSeconds: 60
   selector:
     matchLabels:
       ecoscape/node: "kube1-1" # Entspricht definition.location
