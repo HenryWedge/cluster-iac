@@ -4,7 +4,6 @@ metadata:
   name: image-producer
 spec:
   activeDeadlineSeconds: 60
-  restartPolicy: Never
   selector:
     matchLabels:
       ecoscape/node: "kube1-1" # Entspricht definition.location
@@ -13,6 +12,7 @@ spec:
       labels:
         ecoscape/node: "kube1-1"
     spec:
+      restartPolicy: Never
       initContainers:
         - name: copy
           image: hendrikreiter/dog-test-images
