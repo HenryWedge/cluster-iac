@@ -17,7 +17,7 @@ spec:
           kafka:
             clusters:
               - name: yaml
-                bootstrapServers:  kafka-cluster-kafka-bootstrap.kafka.svc:9092
+                bootstrapServers: kafka-cluster-kafka-bootstrap.kafka.svc:9092
           auth:
             type: disabled
           management:
