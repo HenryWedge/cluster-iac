@@ -18,6 +18,8 @@ spec:
                 bootstrapServers:  kafka-cluster-kafka-bootstrap.kafka.svc:9092
           auth:
             type: disabled
+          service:
+            type: NodePort
           management:
             health:
               ldap:
