@@ -4,9 +4,6 @@ metadata:
   name: image-producer
 spec:
   activeDeadlineSeconds: 60
-  selector:
-    matchLabels:
-      ecoscape/node: "kube1-1" # Entspricht definition.location
   template:
     metadata:
       labels:
