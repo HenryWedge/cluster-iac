@@ -17,7 +17,7 @@ spec:
       cpu: 0.5
   taskManager:
     resource:
-      memory: "2048m"
-      cpu: 1
+      memory: "8192m"
+      cpu: 4
     replicas: 2
   mode: native
