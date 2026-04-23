@@ -2,7 +2,6 @@ apiVersion: flink.apache.org/v1beta1
 kind: FlinkDeployment
 metadata:
   name: flink-session
-  namespace: flink
 spec:
   image: hendrikreiter/image-classification-pipeline:0.1.0
   imagePullPolicy: Always
