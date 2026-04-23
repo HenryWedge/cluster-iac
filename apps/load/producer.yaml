@@ -1,15 +1,17 @@
-apiVersion: batch/v1
-kind: Job
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: image-producer
 spec:
-  activeDeadlineSeconds: 60
+  replicas: 1
+  selector:
+    matchLabels:
+      ecoscape/node: "kube1-1" # Entspricht definition.location
   template:
     metadata:
       labels:
         ecoscape/node: "kube1-1"
     spec:
-      restartPolicy: Never
       initContainers:
         - name: copy
           image: hendrikreiter/dog-test-images
