@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: platform-apps
-  namespace: argocd
+  namespace: emil
 spec:
   generators:
     - git:
@@ -21,7 +21,7 @@ spec:
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{{path.basename}}'
+        namespace: emil
       syncPolicy:
         automated:
           prune: true
