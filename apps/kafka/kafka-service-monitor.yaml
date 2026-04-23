@@ -9,6 +9,6 @@ spec:
       strimzi.io/cluster: kafka-cluster
       strimzi.io/kind: Kafka
       strimzi.io/name: kafka-cluster-kafka-exporter
-  endpoints:
+  podMetricsEndpoints:
     - port: tcp-prometheus
       interval: 30s
