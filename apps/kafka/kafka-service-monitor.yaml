@@ -1,7 +1,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:
-  name: kafka-service-monitor
+  name: kafka-pod-monitor
   namespace: monitoring
 spec:
   selector:
@@ -12,3 +12,4 @@ spec:
   podMetricsEndpoints:
     - port: tcp-prometheus
       interval: 30s
+      path: "/metrics"
