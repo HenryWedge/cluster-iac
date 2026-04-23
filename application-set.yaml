@@ -7,7 +7,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/HenryWedge/cluster-iac
-        revision: HEAD
+        revision: emil
         directories:
           - path: apps/*
   template:
@@ -17,7 +17,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/HenryWedge/cluster-iac
-        targetRevision: HEAD
+        targetRevision: emil
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
