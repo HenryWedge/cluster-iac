@@ -6,5 +6,6 @@ patches:
     target:
       kind: Application
       namespace: argocd
+      labelSelector: app=kafka
 
 nameSuffix: -emil
