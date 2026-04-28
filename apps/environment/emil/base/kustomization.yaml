@@ -1,0 +1,4 @@
+resources:
+  - kafka-application.yaml
+  - kafka-operator.yaml
+  - kafka-ui.yaml
