@@ -11,4 +11,4 @@ patches:
         path: /spec/destination/server
         value: "https://192.168.48.191"
 
-nameSuffix: emil
+nameSuffix: -emil
