@@ -1,0 +1,8 @@
+resources:
+  - .
+
+patches:
+  - path: env1-patch.yaml
+    target:
+      kind: Deployment
+      name: image-producer
