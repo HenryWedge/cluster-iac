@@ -7,4 +7,3 @@ patches:
       kind: Application
       name: kafka-ui
       namespace: argocd
-      labelSelector: app=kafka
