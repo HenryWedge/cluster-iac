@@ -1,5 +1,5 @@
 resources:
-  - ../base
+  - ../../apps/kafka/app
 
 patches:
   - target:
