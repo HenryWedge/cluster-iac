@@ -8,5 +8,3 @@ patches:
       name: kafka-ui
       namespace: argocd
       labelSelector: app=kafka
-
-nameSuffix: -emil
