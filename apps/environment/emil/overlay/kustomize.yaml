@@ -5,6 +5,7 @@ patches:
   - path: patch.yaml
     target:
       kind: Application
+      name: kafka-ui
       namespace: argocd
       labelSelector: app=kafka
 
