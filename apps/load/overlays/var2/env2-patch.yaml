@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-producer
+spec:
+  template:
+    spec:
+      containers:
+        - name: image-producer
+          env:
+            - name: SEND_INTERVAL
+              value: "5"

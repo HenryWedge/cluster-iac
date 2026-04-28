@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      ecoscape/node: "kube1-1" # Entspricht definition.location
+      ecoscape/node: "kube1-1"
   template:
     metadata:
       labels:
