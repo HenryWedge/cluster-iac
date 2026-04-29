@@ -1,6 +1,7 @@
 resources:
   - ../../apps/kafka
   - ../../apps/prometheus
+  - ../../apps/chaos
 
 patches:
   - target:
