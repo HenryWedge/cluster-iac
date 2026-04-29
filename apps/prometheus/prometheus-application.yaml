@@ -11,6 +11,9 @@ spec:
     targetRevision: 83.0.0
     helm:
       values: |
+        server:
+          service:
+            type: NodePort
         alertmanager:
           enabled: false
         kubeStateMetrics:
