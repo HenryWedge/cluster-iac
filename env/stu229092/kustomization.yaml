@@ -9,6 +9,6 @@ patches:
     patch: |
       - op: replace
         path: /spec/destination/server
-        value: "https://192.168.48.191"
+        value: "https://192.168.48.192"
 
 namePrefix: stu229092-
