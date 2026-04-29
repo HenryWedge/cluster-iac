@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/HenryWedge/cluster-iac
     targetRevision: HEAD
-    path: apps/kafka/app/resource
+    path: apps/kafka/resource
   destination:
     server: https://kubernetes.default.svc
     namespace: kafka
