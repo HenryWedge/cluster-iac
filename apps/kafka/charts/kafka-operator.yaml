@@ -9,8 +9,6 @@ spec:
     repoURL: oci://quay.io/strimzi-helm/strimzi-kafka-operator
     chart: strimzi-kafka-operator
     targetRevision: 0.51.0
-    helm:
-      values: ""
   destination:
     server: https://192.168.48.191
     namespace: kafka
