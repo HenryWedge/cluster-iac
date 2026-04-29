@@ -16,7 +16,7 @@ spec:
         kubeStateMetrics:
           enabled: false
         nodeExporter:
-          enabled: false
+          enabled: true
         prometheusOperator:
           enabled: true
         prometheus:
@@ -25,8 +25,7 @@ spec:
             serviceMonitorSelectorNilUsesHelmValues: false
             podMonitorSelectorNilUsesHelmValues: false
         grafana:
-          enabled: true
-          adminPassword: admin
+          enabled: false
         defaultRules:
           create: false
   destination:
