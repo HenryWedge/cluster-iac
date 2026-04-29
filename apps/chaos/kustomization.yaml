@@ -1,0 +1,2 @@
+resources:
+  - ./chaos-mesh-application.yaml
