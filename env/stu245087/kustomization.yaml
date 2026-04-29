@@ -1,0 +1,14 @@
+resources:
+  - ../../apps/kafka
+
+patches:
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+    patch: |
+      - op: replace
+        path: /spec/destination/server
+        value: "https://192.168.48.193"
+
+namePrefix: stu245087-
