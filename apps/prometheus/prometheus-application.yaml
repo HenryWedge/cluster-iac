@@ -21,9 +21,8 @@ spec:
           enabled: true
         prometheus:
           enabled: true
-          server:
-            service:
-              type: NodePort
+          service:
+            type: NodePort
           prometheusSpec:
             serviceMonitorSelectorNilUsesHelmValues: false
             podMonitorSelectorNilUsesHelmValues: false
