@@ -1,25 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: flink-operator
+  name: flink-cluster
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://downloads.apache.org/flink/flink-kubernetes-operator-1.14.0
-    chart: flink-kubernetes-operator
-    targetRevision: 1.14.0
-    helm:
-      values: |
-        metrics:
-          port: 9249
-        operatorConfiguration:
-          create: true
-          append: true
-          flink-conf.yaml: |+
-            kubernetes.operator.reconcile.interval: 15s
-            metrics.reporter.prom.factory.class: org.apache.flink.metrics.prometheus.PrometheusReporterFactory
-            metrics.reporter.prom.port: 9249
+    repoURL: https://github.com/HenryWedge/cluster-iac
+    targetRevision: HEAD
+    path: apps/flink/resource
   destination:
     server: https://kubernetes.default.svc
     namespace: flink

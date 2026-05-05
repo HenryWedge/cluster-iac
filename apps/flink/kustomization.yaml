@@ -1,6 +1,3 @@
 resources:
   - flink-application.yaml
-  - flink-deployment.yaml
-  - flink-monitoring-service.yaml
-  - flink-pod-monitor.yaml
-  - flink-service-monitor.yaml
+  - charts/flink-chart.yaml
