@@ -1,0 +1,16 @@
+resources:
+  - ../../apps/kafka
+  - ../../apps/prometheus
+  - ../../apps/flink
+
+patches:
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+    patch: |
+      - op: replace
+        path: /spec/destination/server
+        value: "https://192.168.48.194"
+
+namePrefix: stu229092-
