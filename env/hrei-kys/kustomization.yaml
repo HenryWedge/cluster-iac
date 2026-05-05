@@ -13,4 +13,4 @@ patches:
         path: /spec/destination/server
         value: "https://192.168.48.194"
 
-namePrefix: stu229092-
+namePrefix: hrei-kys-
