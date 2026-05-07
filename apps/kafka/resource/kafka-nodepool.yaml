@@ -3,7 +3,7 @@ kind: KafkaNodePool
 metadata:
   name: dual-role
   labels:
-    strimzi.io/cluster: kafka-cluster
+    strimzi.io/cluster: stu245087-kafka-cluster
 spec:
   replicas: 3
   roles:
