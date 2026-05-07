@@ -16,7 +16,7 @@ data:
     echo "Broker: ${BROKER}"
     echo "Topic: ${TOPIC}"
 
-    kafka-producer-perf-test.sh \
+    /opt/kafka/bin/kafka-producer-perf-test.sh \
       --topic "${TOPIC}" \
       --num-records "${NUM_RECORDS}" \
       --throughput "${THROUGHPUT}" \
