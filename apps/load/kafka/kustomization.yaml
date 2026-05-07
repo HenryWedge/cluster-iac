@@ -1,2 +1,2 @@
 resources:
-  - resource/kafka-load-application.yaml
+  - kafka-load-application.yaml
