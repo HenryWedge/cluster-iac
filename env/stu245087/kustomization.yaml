@@ -19,7 +19,7 @@ patches:
       kind: Application
     patch: |
       - op: replace
-        path: /spec/source
+        path: /spec/source/repoURL
         value: "https://github.com/P-e-t-e-r-s-e-n/Bachelor"
 
 namePrefix: stu245087-
