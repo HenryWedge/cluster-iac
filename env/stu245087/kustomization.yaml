@@ -13,5 +13,13 @@ patches:
       - op: replace
         path: /spec/destination/server
         value: "https://192.168.48.193"
+  - target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+    patch: |
+      - op: replace
+        path: /spec/source
+        value: "https://github.com/P-e-t-e-r-s-e-n/Bachelor"
 
 namePrefix: stu245087-
