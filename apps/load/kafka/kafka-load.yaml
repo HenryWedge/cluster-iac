@@ -20,7 +20,7 @@ spec:
 
           env:
             - name: BROKER
-              value: "kafka-cluster-kafka-bootstrap:9092"
+              value: "kafka-cluster-kafka-bootstrap.kafka.svc:9092"
 
             - name: TOPIC
               value: "load-test-topic"
