@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: kafka-load-generator
+  namespace: kafka
 spec:
   replicas: 1
   selector:
@@ -19,7 +20,7 @@ spec:
 
           env:
             - name: BROKER
-              value: "kafka:9092"
+              value: "kafka-cluster-kafka-bootstrap:9092"
 
             - name: TOPIC
               value: "load-test-topic"
