@@ -15,12 +15,13 @@ spec:
     spec:
       containers:
         - name: kafka-load-generator
+          # TODO: Newer image
           image: apache/kafka:3.9.1
           imagePullPolicy: IfNotPresent
 
           env:
             - name: BROKER
-              value: "kafka-cluster-kafka-bootstrap.kafka.svc:9092"
+              value: "stu245087-kafka-cluster-kafka-bootstrap.kafka.svc:9092"
 
             - name: TOPIC
               value: "load-test-topic"
