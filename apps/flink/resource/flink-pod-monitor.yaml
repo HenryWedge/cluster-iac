@@ -3,8 +3,6 @@ kind: PodMonitor
 metadata:
   name: flink-kubernetes-operator
   namespace: monitoring
-  labels:
-    release: prometheus
 spec:
   namespaceSelector:
     matchNames:
