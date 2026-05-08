@@ -13,4 +13,5 @@ spec:
     matchLabels:
       app: flink-session
   podMetricsEndpoints:
-      - port: metrics
+    - port: metrics
+      interval: 15s

@@ -16,6 +16,14 @@ spec:
       memory: "1024m"
       cpu: 0.5
   taskManager:
+    podTemplate:
+      spec:
+        containers:
+          - name: flink-main-container
+            ports:
+              - containerPort: 9249
+                name: metrics
+                protocol: TCP
     resource:
       memory: "8192m"
       cpu: 4
