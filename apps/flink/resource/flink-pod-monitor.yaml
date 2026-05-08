@@ -1,8 +1,8 @@
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:
-  name: flink-kubernetes-operator
-  namespace: monitoring
+  name: flink-podmonitor
+  namespace: flink
 spec:
   namespaceSelector:
     matchNames:
