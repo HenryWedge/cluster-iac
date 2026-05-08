@@ -14,4 +14,4 @@ spec:
       app: flink-session
   podMetricsEndpoints:
     - port: metrics
-      interval: 15s
+      interval: 5s
