@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: kafka-cluster
+  name: kafka-load
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/P-e-t-e-r-s-e-n/Bachelor
     targetRevision: HEAD
-    path: apps/kafka/resource
+    path: apps/load/kafka/resource
   destination:
     server: https://kubernetes.default.svc
     namespace: kafka

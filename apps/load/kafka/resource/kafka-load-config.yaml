@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kafka-load-script
+  namespace: kafka
+data:
+  producer.sh: |
+    #!/bin/bash
+
+    TOPIC="${TOPIC:-load-test-topic}"
+    BROKER="${BROKER:-kafka-cluster-kafka-bootstrap:9092}"
+    THROUGHPUT="${THROUGHPUT:--1}"
+    RECORD_SIZE="${RECORD_SIZE:-1024}"
+    NUM_RECORDS="${NUM_RECORDS:-10000000}"
+
+    echo "Starting Kafka load test"
+    echo "Broker: ${BROKER}"
+    echo "Topic: ${TOPIC}"
+
+    /opt/kafka/bin/kafka-producer-perf-test.sh \
+      --topic "${TOPIC}" \
+      --num-records "${NUM_RECORDS}" \
+      --throughput "${THROUGHPUT}" \
+      --record-size "${RECORD_SIZE}" \
+      --producer-props acks=1 bootstrap.servers="${BROKER}"
